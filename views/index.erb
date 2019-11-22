@@ -1,3 +1,9 @@
 <div class="container">
   <h1>View from './view/index.erb' working</h1>
+  <p>Post count: <%= @posts.count %></p>
+  <ul>
+    <% @posts.each do |post| %>
+      <li><%= post.name %></li>
+    <% end %>
+  </ul>
 </div>
